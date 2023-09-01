@@ -1,0 +1,151 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+#logo img{
+    flex-direction: row;
+    
+}
+#log{
+    width: 250px;
+    
+}
+#cart{
+    width: 100px;
+    color:#ffffff;
+}
+#login{
+    width: 100px;
+    color: #ffffff;
+}
+
+#btt_menu{
+    display: none;
+}
+label[for="btt_menu"]{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    color: #ffffff;
+    font: 50px;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #161624;
+}
+li{
+    float: left;
+}
+li a, .drop_btt{
+    display: inline-block;
+
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+li:hover, .dropdown:hover, .drop_btt:hover{
+    background-color: #a93fd3;
+}
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #a407ff;
+    min-width:160px ;
+    z-index: 1;
+}
+.dropdown_content a{
+    color: #ffffff;
+    padding: 14px 16px;
+    display: block;
+    text-align: left;
+}
+.dropdown_content a:hover{
+    background-color: #000000;
+}
+.dropdown:hover .dropdown_content{
+    display: block;
+}
+
+@media(max-width: 800px){
+
+    #header{
+        text-align: center;
+    }
+
+    label[for="btt_menu"]{
+        display: block;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    #nav li{
+        float: none;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #nav .dropdown_content{
+        position: relative;
+    }
+
+    #nav .dropdown_content a{
+        text-align: center;
+    }
+
+    #btt_menu:checked ~ #nav{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #000;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 20px 0;
+      z-index: 1;
+    }
+  
+    .navbar ul {
+      padding: 0;
+    }
+  
+    .navbar li {
+      list-style: none;
+      margin: 10px 0;
+    }
+  
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    /* ... Estilos para o botão de menu responsivo ... */
+  }
+  
+  /* ... Seus estilos existentes ... */
+  
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161624;
+}
